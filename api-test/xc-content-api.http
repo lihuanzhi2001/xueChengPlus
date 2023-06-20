@@ -1,0 +1,49 @@
+### 课程查询接口
+POST http://{{host}}/content/course/list?pageNo=1&pageSize=5
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "status": "203001"
+}
+
+### 课程分类查询
+GET http://{{content_host}}/content/course-category/tree-nodes
+
+### 新增课程接口
+POST {{content_host}}/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice": 100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "",
+  "teachmode": "200002",
+  "users": "dfsafsdfsafdsfsdfsdd",
+  "tags": "tags",
+  "grade": "204001",
+  "description": "课程简介1111111"
+}
+
+### 课程计划绑定视频
+POST {{media_host}}/media/teachplan/association/media
+Content-Type: application/json
+{
+  "mediaId": "",
+  "fileName": "",
+  "teachplanId": ""
+}
+
+### 课程发布
+POST {{content_host}}/content/coursepublish/1
+
+###

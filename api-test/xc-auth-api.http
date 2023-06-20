@@ -1,0 +1,8 @@
+
+### 密码模式
+POST {{auth_host}}/auth/oauth/token?client_id=XcWebApp&client_secret=XcWebApp&grant_type=password&username={"authType":"password","username":"itcast","password":"111111"}
+
+### 校验令牌
+POST {{auth_host}}/auth/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ7XCJjZWxscGhvbmVcIjpcIjEyMzQ1XCIsXCJjcmVhdGVUaW1lXCI6XCIyMDIyLTA5LTI4VDA4OjMyOjAzXCIsXCJlbWFpbFwiOlwiXCIsXCJpZFwiOlwiNDlcIixcIm5hbWVcIjpcInRlc3QwMlwiLFwic2V4XCI6XCIxXCIsXCJzdGF0dXNcIjpcIjFcIixcInVzZXJuYW1lXCI6XCJpdGNhc3RcIixcInV0eXBlXCI6XCIxMDEwMDJcIn0iLCJzY29wZSI6WyJhbGwiXSwiZXhwIjoxNjc1MTkyNjg4LCJhdXRob3JpdGllcyI6WyJ0ZXN0Il0sImp0aSI6Ijg0YzM3ZTJjLTY5ZTQtNDZlZC05YmFlLTk0MGFjMmViNDZmZSIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.Di0c6wZTXpI37PqdtQedRtNTaMWdsJizjybUaRvyI7c
+
+###

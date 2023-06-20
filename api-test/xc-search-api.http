@@ -1,0 +1,32 @@
+### 添加索引
+POST {{search_host}}/search/index/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "companyId": 100000,
+  "companyName": "北京黑马程序",
+  "createDate": "2022-09-25 09:36:11",
+  "description": "HTML/CSS",
+  "grade": "204001",
+  "id": 102,
+  "mt": "1-1",
+  "mtName": "前端开发",
+  "name": "Html参考大全",
+  "originalPrice": 200.0,
+  "pic": "/mediafiles/2022/09/20/e726b71ba99c70e8c9d2850c2a7019d7.jpg",
+  "price": 100.0,
+  "remark": "没有备注",
+  "st": "1-1-1",
+  "stName": "HTML/CSS",
+  "status": "203002",
+  "tags": "没有标签",
+  "teachmode": "200002",
+  "validDays": 222
+}
+
+###查询索引
+GET {{search_host}}/search/course/list?pageNo=1
+Content-Type: application/json
+
+###
